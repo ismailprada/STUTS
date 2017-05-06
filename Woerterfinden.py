@@ -12,3 +12,5 @@ for line in infile:
 
 for word in sorted(set(words)):
     print(word)
+
+infile.close()

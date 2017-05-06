@@ -17,3 +17,4 @@ for line in infile:
 for word in sorted(word_counting_dict.items(), key=lambda x: x[1], reverse=True)[:100]:
     print(word)
 
+infile.close()

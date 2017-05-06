@@ -12,3 +12,5 @@ for line in infile:
 
 print("Anzahl Wörter im Text:")
 print(word_counter)
+
+infile.close()

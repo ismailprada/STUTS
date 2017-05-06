@@ -14,3 +14,5 @@ for line in infile:
 
 print("Anzahl Wörter im Text:")
 print(token_counter)
+
+infile.close()
