@@ -2,15 +2,15 @@
 
 infile = open("newstest2009.de")
 
-words = []
+words = set()
 
 for line in infile:
     line = line.split()
     for word in line:
         if word[0] == "A" and word[-1] == "s":
-            words.append(word)
+            words.add(word)
 
-for word in sorted(set(words)):
+for word in sorted(words):
     print(word)
 
 infile.close()
