@@ -1,18 +1,17 @@
 #!/usr/bin/env python3
 
+from collections import Counter
+
 infile = open("newstest2009.de")
 
-word_counting_dict = {}
+word_count = Counter()
 
 for line in infile:
     line = line.split()
     for word in line:
-        if word in word_counting_dict:
-            word_counting_dict[word] += 1
-        else:
-            word_counting_dict[word] = 1
+        word_count[word] += 1
 
-for word in sorted(word_counting_dict.items(), key=lambda x: x[1], reverse=True)[:100]:
-    print(word)
+for entry in word_count.most_common(100):
+    print(entry)
 
 infile.close()
