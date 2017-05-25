@@ -2,7 +2,7 @@
 
 from nltk import word_tokenize
 
-infile = open("newstest2009.de")
+infile = open("newstest2009.de", encoding="utf-8")
 
 token_counter = 0
 
