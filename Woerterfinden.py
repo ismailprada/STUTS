@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-infile = open("newstest2009.de")
+infile = open("newstest2009.de", encoding="utf-8")
 
 words = set()
 

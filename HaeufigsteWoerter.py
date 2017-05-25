@@ -2,7 +2,7 @@
 
 from collections import Counter
 
-infile = open("newstest2009.de")
+infile = open("newstest2009.de", encoding="utf-8")
 
 word_count = Counter()
 
